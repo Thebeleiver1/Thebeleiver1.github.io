@@ -2,7 +2,15 @@ html, body {
     height: 100%;
     margin: 0;
     /* overflow: hidden; */
-    
+}
+/* .head{
+    max-width: 500px;
+    overflow-x: hidden;
+} */
+
+.text1 {
+    color: green;
+    font-weight: bolder;
 }
 
 .container {
@@ -37,15 +45,29 @@ html, body {
     /*
     top: 45%;
     left:45%; */
-    width: 150px;
-    height: 150px;
+    width: 200px;
+    height: 200px;
     border-radius: 50%;
     border: 3px solid black;
-    text-align: center;
-    background-image: url('image/login.jpeg');
+    background-image: url('image/login.jpg');
     background-size: 100% 100%;
     animation-name: example;
-    animation-duration: 6S;
+    animation-duration: 4S;
+}
+
+/* .bio{
+    display:flex;
+    flex-wrap: wrap;
+} */
+
+.picture {
+    position: relative;
+    left: 20%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    background-image: url('image/login.jpg');
+    background-size: 100% 100%;
 }
 
 .portfolio {
@@ -66,13 +88,27 @@ html, body {
     flex-wrap: wrap;
     flex-direction: row;
     /* position: relative; */
-    bottom: 0;
+    justify-content: space-between;
     width: 90%;
     min-height: 70px;
     /* background-color: #e1e4ea; */
     margin-left: 5%;
-    border-radius: 7px;
+    border-radius: 10px;
     /* overflow: hidden; */
+}
+
+article {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    overflow: auto;
+    position: relative;
+    text-align: justify;
+    color: white;
+    max-width: 96%;
+    max-height: 68vh;
+    margin: 0 2%;
+    border-radius: 5px;
 }
 
 .icon {
@@ -85,7 +121,99 @@ html, body {
     border-radius: 10px;
     font-size: 20px;
     font-weight: bold;
-    color: black;
+    background-color: white;
+}
+
+.terminalicon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-image: url(image/png/folder-icon.png);
+    background-size: 100% 100%;
+}
+
+.portfolioicon {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: center;
+    width: 150px;
+    height: 150px;
+    margin: 20px;
+    background-image: url(image/png/folder-icon.png);
+    background-size: 100% 100%;
+    margin-left: 25%;
+}
+
+.myskill {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: 10%;
+}
+
+.skillicon {
+    width: 100px;
+    height: 100px;
+    margin: 10px;
+    margin-top: 10%;
+}
+
+.cssicon {
+    background-image: url(image/png/css.png);
+    background-size: 100% 100%;
+}
+
+.htmlicon {
+    background-image: url(image/png/html-5.png);
+    background-size: 100% 100%;
+}
+
+.giticon {
+    background-image: url(image/png/git-logo.png);
+    background-size: 100% 100%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.githubicon {
+    background-image: url(image/png/github.png);
+    background-size: 100% 100%;
+}
+
+.rubyicon {
+    background-image: url(image/png/ruby.png);
+    background-size: 100% 100%;
+}
+
+.roricon {
+    background-image: url(image/png/ror.png);
+    background-size: 100% 100%;
+}
+
+.nodejsicon {
+    background-image: url(image/png/nod-logo.png);
+    background-size: 100% 100%;
+}
+
+.jsicon {
+    background-image: url(image/png/javascript.png);
+    background-size: 100% 100%;
+}
+
+.reacticon {
+    background-image: url(image/png/React-1.png);
+    background-size: 100% 100%;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.one {
+    min-height: 90vh;
+    min-width: 90vh;
 }
 
 .home {
@@ -93,63 +221,85 @@ html, body {
     background-size: 100% 100%;
 }
 
+.project {
+    background-image: url(image/png/project.jpg);
+    background-color: red;
+    background-size: 100% 100%;
+}
+
+.skill {
+    background-image: url(image/png/skills.png);
+    background-size: 100% 100%;
+}
+
+.history {
+    background-image: url(image/png/wkhistory.png);
+    background-size: 100% 100%;
+}
+
+.career {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 90%;
+}
+
+.side1 {
+    max-width: 200px;
+    min-height: 100px;
+    background: silver;
+    border: 3px solid burlywood;
+    text-align: justify;
+    overflow: hidden;
+    margin: 1%;
+    
+}
+
 .contact {
     background-image: url(image/png/contact.png);
     background-size: 100% 100%;
 }
 
+.contacticon {
+    float: left;
+    position: relative;
+    top: 60%;
+}
+
+.contactlinkedin {
+    width: 100px;
+    height: 100px;
+    background-image: url(image/png/linkedin.png);
+    background-size: 100% 100%;
+    margin: 20px;
+}
+
+.contactgithub {
+    width: 100px;
+    height: 100px;
+    background-image: url(image/png/github.png);
+    background-size: 100% 100%;
+    margin: 20px;
+}
+
 .login:hover {
-    width: 165px;
-    height: 165px;
+    width: 215px;
+    height: 215px;
     border: 5px solid black;
 }
 
-article {
-    overflow: auto;
-    text-align: justify;
-    color: white;
-    max-width: 96%;
-    max-height: 68vh;
-    margin: 0 2%;
-    border-radius: 10px;
-}
-
-/*@media screen and(max-width: 675px) {
-    .login {
-        width: 50px;
-        height: 50px;
-    }
-    .main {
-        animation-name: rotatemain;
-        animation-duration: 1s;
-    }
-    .icon {
-        min-width: 45px;
-        min-height: 45px;
-    }
-    .login:hover {
-        width: 55px;
-        height: 55px;
-        border: 5px solid black;
-    }
-}
-*/
-
-@media only screen and (max-width: 600px) {
-    .icon {
-        min-width: 45px;
-        min-height: 45px;
-    }
+.icon:hover {
+    min-width: 60px;
+    min-height: 60px;
 }
 
 @media screen and (max-width: 1024px) {
-    
     .bottom {
         display: none;
     }
     .login {
-        width: 100px;
-        height: 100px;
+        width: 140px;
+        height: 140px;
     }
     .portfolio {
         animation-name: rotatemain;
@@ -160,11 +310,36 @@ article {
         animation-duration: .30s;
     }
     .login:hover {
-        width: 105px;
-        height: 105px;
+        width: 145px;
+        height: 145px;
         border: 5px solid black;
     }
-    
+    .head{
+        max-width: 400px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .icon {
+        min-width: 45px;
+        min-height: 45px;
+    }
+    .login {
+        width: 75px;
+        height: 75px;
+    }
+    .login:hover {
+        width: 80px;
+        height: 80px;
+        border: 5px solid black;
+    }
+    .picture{
+        width:150px;
+        height:150px;
+    }
+    .head{
+        max-width: 300px;
+    }
 }
 
 @keyframes example {
