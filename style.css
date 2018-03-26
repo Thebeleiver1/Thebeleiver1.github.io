@@ -4,7 +4,6 @@ html, body {
     overflow: hidden;
 }
 
-
 .text1 {
     color: green;
     font-weight: bolder;
@@ -51,8 +50,8 @@ html, body {
     animation-duration: 4S;
 }
 
-.bio{
-    display:flex;
+.bio {
+    display: flex;
     flex-wrap: wrap;
     /* position: relative; */
     overflow-x: hidden;
@@ -76,7 +75,6 @@ html, body {
     margin: 5%;
     position: relative;
     background-color: #004155;
-    
     /* border: 2px double black;
     background-image:url('image/background.jpeg');
     background-size: 100% 100%;
@@ -214,12 +212,10 @@ article {
 }
 
 .one {
-    display:flex;
+    display: flex;
     flex-wrap: wrap;
     min-height: 90vh;
     min-width: 90vh;
-    
-    
 }
 
 .home {
@@ -258,7 +254,6 @@ article {
     text-align: justify;
     overflow: hidden;
     margin: 1%;
-    
 }
 
 .contact {
@@ -320,11 +315,9 @@ article {
         height: 145px;
         border: 5px solid black;
     }
-
-    .myskill{
+    .myskill {
         max-width: 600px;
     }
-    
 }
 
 @media only screen and (max-width: 600px) {
@@ -341,21 +334,19 @@ article {
         height: 80px;
         border: 5px solid black;
     }
-    .picture{
-        width:150px;
-        height:150px;
+    .picture {
+        width: 150px;
+        height: 150px;
     }
-    .skillicon{
+    .skillicon {
         width: 60px;
-        height:60px;
-        margin-top:1%;
+        height: 60px;
+        margin-top: 1%;
     }
-
-    .myskill{
+    .myskill {
         max-width: 300px;
-        margin:0%;
+        margin: 0%;
     }
-    
 }
 
 @keyframes example {
