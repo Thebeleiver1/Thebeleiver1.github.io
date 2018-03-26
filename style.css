@@ -1,12 +1,9 @@
 html, body {
     height: 100%;
     margin: 0;
-    /* overflow: hidden; */
+    overflow: hidden;
 }
-/* .head{
-    max-width: 500px;
-    overflow-x: hidden;
-} */
+
 
 .text1 {
     color: green;
@@ -18,7 +15,6 @@ html, body {
     flex-wrap: wrap;
     border-radius: 50px;
     border: 8px double silver;
-    flex-wrap: nowrap;
     min-height: 97%;
     min-width: 97%;
     background-color: black;
@@ -55,10 +51,12 @@ html, body {
     animation-duration: 4S;
 }
 
-/* .bio{
+.bio{
     display:flex;
     flex-wrap: wrap;
-} */
+    /* position: relative; */
+    overflow-x: hidden;
+}
 
 .picture {
     position: relative;
@@ -71,11 +69,14 @@ html, body {
 }
 
 .portfolio {
+    display: flex;
+    flex-wrap: wrap;
     width: 90%;
     min-height: 86%;
     margin: 5%;
     position: relative;
     background-color: #004155;
+    
     /* border: 2px double black;
     background-image:url('image/background.jpeg');
     background-size: 100% 100%;
@@ -152,6 +153,7 @@ article {
 .myskill {
     display: flex;
     flex-wrap: wrap;
+    max-width: 800px;
     margin-left: 10%;
 }
 
@@ -212,8 +214,12 @@ article {
 }
 
 .one {
+    display:flex;
+    flex-wrap: wrap;
     min-height: 90vh;
     min-width: 90vh;
+    
+    
 }
 
 .home {
@@ -314,9 +320,11 @@ article {
         height: 145px;
         border: 5px solid black;
     }
-    .head{
-        max-width: 400px;
+
+    .myskill{
+        max-width: 600px;
     }
+    
 }
 
 @media only screen and (max-width: 600px) {
@@ -337,9 +345,17 @@ article {
         width:150px;
         height:150px;
     }
-    .head{
-        max-width: 300px;
+    .skillicon{
+        width: 60px;
+        height:60px;
+        margin-top:1%;
     }
+
+    .myskill{
+        max-width: 300px;
+        margin:0%;
+    }
+    
 }
 
 @keyframes example {
